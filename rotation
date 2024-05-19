@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	
+	int arr[n];
+	
+	for(int i=0;i<n;i++){
+	    cin>>arr[i];
+	}
+	
+int d;
+cin>>d;
+
+//int p = 1;
+    //while (p <= d) {
+        int last = arr[n];
+        for (int i = n-1; i >0; i--) {
+            arr[i] = arr[i - 1];
+        }
+        arr[0] = last;
+      //  p++;
+    }
+
+
+for(int i=0;i<n;i++){
+    cout<<arr[i]<<" ";
+}
+    }
+    
+
+
+//https://www.geeksforgeeks.org/print-array-after-it-is-right-rotated-k-times/
